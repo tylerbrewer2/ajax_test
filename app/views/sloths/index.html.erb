@@ -6,7 +6,7 @@
 <script>
   var ajax_test = true
   $('#thelink').bind('ajax:complete', function(event, data) {
-    console.log(data);
+    console.log("You submitted an AJAX request!")
     if  (ajax_test) {
       $('#replaced').html(data.responseText);
       ajax_test = false;
