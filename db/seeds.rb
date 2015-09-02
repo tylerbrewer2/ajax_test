@@ -7,10 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-sloth_list = [
-  [ "Stellan", "http://assets.worldwildlife.org/photos/6526/images/hero_small/sloth_(c)_Jorge_Salas_International_Expeditions.JPG?1394634201", "Loves staring. Hasn't trimed his nails in over 30 years." ]
-]
+sloth_list = ["Stellan the Sloth"]
 
-sloth_list.each do |name, url, description|
-  Sloth.create( name: name, url: url, description: description )
+sloth_list.each do |name|
+  Sloth.create( name: name )
 end

@@ -1,0 +1,11 @@
+if ($('.info').length == 0) {
+   $("#some_div").hide(function() {
+     $(this).append("<%= j render 'info' %>")
+   })
+   $("#some_div").fadeIn("slow");
+
+} else {
+  $(".info").fadeOut("slow", function() {
+       $(this).remove();
+   });
+}
